@@ -1,0 +1,21 @@
+// find the factorial of a number
+#include <stdio.h>
+int main ()
+{
+    int number,i,result =1;
+    printf("Type a positive numbers : ");scanf("%d",&number);
+    while(number < 0 )
+    {
+        printf("Invalid number! Retype : ");scanf("%d",&number);
+                
+    }
+    if (number!=0 && number !=1)
+    {
+        for (i = number; i >= 2 ; i--)
+        {
+            result = result *i;
+        }
+    }
+    printf("Result while loop = %d",result);
+    return 0; 
+}

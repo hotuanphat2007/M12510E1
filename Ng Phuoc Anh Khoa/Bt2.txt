@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main () {
+    int a = 6 , b = 3, c = 2; 
+    int result ;
+    printf ("Given a = %d , b = %d , c = %d \n",a,b,c); 
+    result = (a+b) * c & a | b ;
+    printf (" Expression : (a+b) * c & a | b \n"); 
+    int step_1 = a +b ; 
+    int step_2 = step_1  * c ; 
+    int step_3 = step_2 & a; 
+    int step_4 = step_3 | b ; 
+    printf("Step by step : \n"); 
+    printf("a+b = %d \n ", step_1); 
+    printf("(a+b)*c =  %d \n",step_1,step_2);
+    printf("(a+b)*c & a= %d \n",step_2,step_3);
+    printf("(a+b)*c & a | b = %d \n", step_3,step_4);
+    printf("Result = %d \n",result);
+    return 0;
+}

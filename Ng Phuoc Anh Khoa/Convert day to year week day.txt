@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int Number_of_Days = 1329;
+    int Years, Weeks,Days ;  
+    Years = Number_of_Days / 365; 
+    printf("Years : %d \n",Years); 
+    Weeks = (Number_of_Days / 7) - (Years * 52);
+    printf("Weeks : %d \n",Weeks);
+    Days = Number_of_Days - (Years * 365) - (Weeks * 7);
+    printf("Days : %d ",Days);
+    return 0;
+}

@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main () 
+{
+    int i,number,result = 1 ; 
+    printf(" Enter a positive number: ");scanf ("%d",&number); 
+    while(number <0 )
+    {
+        printf("Invalid number! Re-type: "); scanf("%d",&number);
+    }
+    do
+    {
+        result = result * number ; 
+        number --;
+    } while (number >= 2);
+    printf ("Do while loop result is : %d ", result);        
+    return 0;
+}
