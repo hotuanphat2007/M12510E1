@@ -1,0 +1,15 @@
+day la bai tap ve nha cua
+
+
+
+
+local 					         staging	area			       branch local		              remote 
+baitapvenha.c --> git add .      baitapvenha.c -> git commit       baitapvenha.c --> git push     baitapvenha.c
+
+
+
+
+
+
+
+luu tru la minh da commit cai gi: "update find baitapvenha.c "
