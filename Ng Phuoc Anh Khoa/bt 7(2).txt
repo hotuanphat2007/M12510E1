@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main ()
+{
+    int arr[3][3];
+    printf("Enter a matrix of 3x3: \n");
+    for (int r=0;r<3;r++)
+    {
+        for(int c=0;c<3;c++)
+        {
+            printf(" [%d] [%d]: ",r,c); scanf("%d",&arr[r][c]);
+        }
+    }   
+    int sum =0,sum2 =0,sum3 =0;
+    for (int k=0;k <3;k++)
+    {        
+        sum = sum + arr[k][0];
+        sum2 = sum2 + arr[k][1];
+        sum3 = sum3 + arr[k][2];        
+    }
+    printf("Column 1 sum = %d \n",sum);
+    printf("Column 2 sum = %d \n",sum2);
+    printf("Column 3 sum = %d \n",sum3);
+    
+    return 0;
+
+
+}

@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main () {
+    int x,result; 
+    printf("Enter a number : "); 
+    scanf ("%d",&x );
+    result = x ^ (1<<1);
+    result = result ^ (1<<3); 
+    printf("New value = %d \n", result); 
+    return 0;
+}
