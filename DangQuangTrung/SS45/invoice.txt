@@ -1,0 +1,4 @@
+product name: pen
+quantity: 10
+price: 10.50
+total: 105.00
